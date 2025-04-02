@@ -1,0 +1,22 @@
+{
+  "name": "sidebar-01",
+  "type": "registry:block",
+  "registryDependancies": [
+    "button",
+    "input"
+  ],
+  "files": [
+    {
+      "type": "registry:block",
+      "content": "import React from \"react\";\r\nimport Input01 from \"./input-01\";\r\n\r\nconst Sidebar01 = () => {\r\n\treturn (\r\n\t\t<div id='sidebar' className='sidebar'>\r\n\t\t\t{\r\n\t\t\t\t<Input01/>\r\n\t\t\t}\r\n\t\t\t<div className='p-4 '>\r\n\t\t\t\t<h2 className='text-lg font-semibold mb-4'>Sidebar Menu</h2>\r\n\t\t\t\t<button className='block w-full text-left py-2 hover:bg-gray-100'>\r\n\t\t\t\t\tHome\r\n\t\t\t\t</button>\r\n\t\t\t\t<button className='block w-full text-left py-2 hover:bg-gray-100'>\r\n\t\t\t\t\tDashboard\r\n\t\t\t\t</button>\r\n\t\t\t\t<button className='block w-full text-left py-2 hover:bg-gray-100'>\r\n\t\t\t\t\tSettings\r\n\t\t\t\t</button>\r\n\t\t\t\t<button className='block w-full text-left py-2 hover:bg-gray-100'>\r\n\t\t\t\t\tProfile\r\n\t\t\t\t</button>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t);\r\n};\r\n\r\nexport default Sidebar01;\r\n",
+      "path": "block/sidebar-01/sidebar-01.jsx",
+      "target": "components/block/sidebar-01/sidebar-01.jsx"
+    },
+    {
+      "type": "registry:block",
+      "content": "import { Input } from \"@/components/ui/input\";\r\n\r\nimport React from \"react\";\r\n\r\nconst Input01 = () => {\r\n\treturn <div>\r\n        <Input></Input>\r\n    </div>;\r\n};\r\n\r\nexport default Input01;\r\n",
+      "path": "block/sidebar-01/input-01.jsx",
+      "target": "components/block/sidebar-01/input-01.jsx"
+    }
+  ]
+}
